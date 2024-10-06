@@ -5,7 +5,8 @@ def BucketSort(array):
     for i in range(n):
         bucket.append([])
     for i in range(n):
-        index = int(n*array[i])
+        index1 = n*array[i]
+        index = int(index1)
         bucket[index].append(array[i])
     for i in range(n):
         bucket[i] = InsertionSort(bucket[i])
@@ -26,3 +27,6 @@ def InsertionSort(array):
         array[j+1] = key
     return array
 
+# for dry run make a small array
+array = [0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434]
+print(BucketSort(array))

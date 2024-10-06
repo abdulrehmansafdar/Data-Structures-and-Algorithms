@@ -1,10 +1,10 @@
 import funcs
 import Prob2
 def InsertionSort(array,start,end):
-    for i in range(start+1,end):
+    for i in range(start+1,end+1):
         key = array[i]
         j = i-1
-        while j>=0 and array[j] > key:
+        while j>=start and array[j] > key:
             array[j+1] =array[j]
             j =j -1
         array[j+1]= key

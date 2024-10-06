@@ -31,5 +31,8 @@ if __name__ == "__main__":
         writer = csv.writer(f)
         for value in X:
             writer.writerow([value])
-
+# X = [3,8,15,6,1,7]
+# n = 2
+# HybridMergeSort(X, 0, len(X) - 1, n)
+# print(X)
 
