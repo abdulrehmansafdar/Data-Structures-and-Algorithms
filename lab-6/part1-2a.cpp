@@ -24,7 +24,8 @@ public:
             cout << "Stack Overflow" << endl;
             return;
         }
-        arr[++top] = data;
+        top++;
+        arr[top] = data;
     }
 
     T pop() {
@@ -32,7 +33,11 @@ public:
             cout << "Stack Underflow" << endl;
             exit(EXIT_FAILURE);
         }
-        return arr[top--];
+        
+        T value = arr[top];
+        top--;
+        return value;
+       
     }
 
     T peek() {
