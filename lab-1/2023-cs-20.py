@@ -23,7 +23,6 @@ else:
 
 
 
-
 # Problem 1.3
 
 def Minimum(array,starting_index,ending_index):
